@@ -1,0 +1,143 @@
+.custom-table-main{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%!important;
+}
+.custom-table-main th {
+  background-image: linear-gradient(to top right, #00414E , #00B1AB);  color: #ffffff;
+  min-width: 130px;
+  text-align:center !important; 
+}
+.custom-table-main td, th {
+  border: 1px solid #dddddd !important;
+  text-align: left!important;
+  padding: 8px!important;
+}
+
+.custom-table-main tr:first-child {
+  background-color: #00414E!important;
+  border:none!important;
+}
+.custom-table-main tr:first-child th{
+ color: #fff;
+}
+.main_form_container
+{
+  display: flex;
+  gap: 30px;
+}
+#billing_data
+{
+  float: left;
+}
+#payment_data
+{
+  float: right;
+}
+
+#authorize_net_payment_form {
+  text-align: right!important;
+  padding-right: 10px!important;
+}
+
+#authorize_net_payment_form input{
+
+  margin-top: 10px!important;
+  padding: 0px 10px!important;
+
+}
+.submit-btn-1,#payment_data > input{
+  background-color: #00414E !important;
+  padding: 5px 20px !important;
+  font-size: 17px !important;
+  border-radius: 5px !important;
+  border: 1px solid #00414E !important;
+  color:#fff!important;
+}
+.submit-btn-1:hover,#payment_data > input:hover{
+  background-color: #ddd !important;
+
+}
+#authorize_net_payment_form input {
+  margin: 10px 0px 0px 10px !important;
+}
+
+@media only screen and (max-width:1080px){
+  .main_form_container {
+    gap: 0px;
+    flex-direction: column !important;
+  }
+  .custom-table-main tr {
+    display: flex;
+    font-size: 20px !important; 
+    flex-direction: column;
+  }
+  .custom-table-main tbody {
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 20px !important;
+  }
+
+}
+
+@media only screen and (max-width:768px){
+  .custom-table-main tr {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px !important;
+  }
+  .custom-table-main tbody {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+  }
+  .custom-table-main th {
+    font-size: 14px !important;
+    padding: 11.7px 0px !important;
+  }
+  #billing_data div, #payment_data div{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items:start !important;
+    flex-direction: column;
+  }
+  #billing_data > div input, #payment_data > div input {
+    margin: 0px 0px 10px 0px !important;
+  }
+  .submit-btn-1, #payment_data > input {
+    float: left;
+    margin: 10px 0px !important;
+   cursor:pointer;
+  }
+  
+}
+#Ops
+{
+  color:red!important;
+  font-weight: bold!important;
+}
+#thankyou_mesg
+{
+  color:green!important;
+  font-weight: bold!important;
+}
+#response {
+  margin-left: 30%!important;
+}
+
+#trasc_amount_f {
+  color: #D94825;
+}
+#trasc_date_f {
+  font-size: 15px;
+}
+.submit-btn-1 {
+  cursor: pointer;
+}
+.submit-btn-1, #payment_data > input
+{
+  cursor: pointer;
+}
+.woocommerce > .woocommerce-MyAccount-content {
+  overflow: auto!important;
+}

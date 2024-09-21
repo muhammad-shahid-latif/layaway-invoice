@@ -1,0 +1,141 @@
+.main-full-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #00414E;
+  background-color: #00414E;
+  display:flex;
+  gap:2px;
+}
+
+.tab button {
+  background-image: linear-gradient(to top right, #00414E , #00B1AB);  color: #ffffff;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-weight: bold;
+  width:100%;
+}
+
+.tab button.active {
+transform: scale(1.05);
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #00414E;
+  border-top: none;
+}
+
+.main-full-container h2 {
+position: relative;
+width:fit-content;
+font-size: 22px;
+color:#00414E;
+}
+.main-full-container h2::after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  left: 2px;
+  top: 25px;
+  background-color: #00414E;
+}
+.main-full-container form {
+  background-image: linear-gradient(to top right, #B1B1B126 , #E1FDFDA3);
+  color: #000;
+}
+
+/*.tabcontent hr{
+  border-bottom: 1px solid #00414E;
+}*/
+.input-main {
+  display: flex;
+  gap: 40px;
+  padding: 10px 0px;
+  justify-content: start;
+}
+.input-main label{
+  width: 200px;
+}
+
+.submit-btn-1 {
+  padding: 8px 50px;
+  background-image: linear-gradient(to top right, #00414E , #00B1AB);  color: #ffffff;
+  border-radius: 0px 15px 0px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-color: #00414E;
+}
+
+.submit-btn-1:hover {
+  background-image: linear-gradient(to top right, #00B1AB , #00414E);  color: #ffffff;
+
+}
+
+.main_heading_area {
+  width: 100%;
+}
+.main_heading_area h1{
+  color:#00414E;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  width: fit-content;
+}
+
+.button-main {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+#consumer_key_fields {
+  width: 40%;
+}
+
+#consumer_secret_fields {
+  width: 40%;
+}
+
+#trasc_date {
+
+  font-size: 12px;
+
+}
+
+#trasc_amount {
+  font-weight: bold;
+  color: #00414E;
+}
+.btn-group-01 {
+  width: fit-content;
+  border: 1px solid #00414E;
+}
+.btn-group-01 a {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: blue;
+  color: #fff;
+  margin: 0;
+}
+.layaway_invoice_fields {
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 809px) {
+.tab {
+  flex-direction: column;
+}
+}
+
